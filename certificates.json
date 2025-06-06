@@ -1,13 +1,8 @@
-{
-  "id": "ABC123",
-  "name": "Fatemeh Jafari",
-  "course": "Python for Beginners",
-  "date": "June 6, 2025",
-  "skills": [
-    "Variables and Data Types",
-    "Control Flow (if, for, while)",
-    "Functions and Modules",
-    "Basic File Handling",
-    "Intro to OOP in Python"
-  ]
-}
+[
+  {
+    "id": "ABC123",
+    "name": "Fatemeh Jafari",
+    "course": "Python for Beginners",
+    "date": "June 6, 2025"
+  }
+]
