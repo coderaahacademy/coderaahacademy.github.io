@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify Certificate - codeRaahAcademy</title>
+</head>
+<body>
+  <h1>Certificate Verification</h1>
+  <input type="text" id="certId" placeholder="Enter Certificate ID" />
+  <button onclick="verifyCertificate()">Verify</button>
+  <div id="result"></div>
+
+  <script>
+    async function verifyCertificate() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramId = urlParams.get('id');
+      const id = paramId || document.getElementById('certId').value.trim();
+      const res = await fetch('certificates.json');
+      const data = await res.json();
+      const cert = data.find(c => c.id === id);
+      const resultDiv = document.getElementById('result');
+      if (cert) {
+        resultDiv.innerHTML = `
+          <h3>✅ Valid Certificate</h3>
+          <p><strong>Name:</strong> ${cert.name}</p>
+          <p><strong>Course:</strong> ${cert.course}</p>
+          <p><strong>Date:</strong> ${cert.date}</p>
+        `;
+      } else {
+        resultDiv.innerHTML = `<p style="color: red;">❌ Certificate not found</p>`;
+      }
+    }
+
+    window.onload = verifyCertificate;
+  </script>
+</body>
+</html>
