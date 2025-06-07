@@ -11,5 +11,31 @@
       "Basic File Handling",
       "Intro to OOP in Python"
     ]
+  },
+  {
+    "id": "XYZ789",
+    "name": "Ali Rezaei",
+    "course": "Foundations of Machine Learning",
+    "date": "June 10, 2025",
+    "skills": [
+      "Linear Regression",
+      "Gradient Descent",
+      "Loss Functions",
+      "Train/Test Split",
+      "Overfitting and Regularization"
+    ]
+  },
+  {
+    "id": "LMN456",
+    "name": "Zahra Karimi",
+    "course": "Front-End Web Development",
+    "date": "June 15, 2025",
+    "skills": [
+      "HTML5 & CSS3",
+      "Responsive Web Design",
+      "JavaScript DOM Manipulation",
+      "Flexbox & Grid",
+      "Form Validation"
+    ]
   }
 ]
