@@ -2,56 +2,247 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Certificate - CodeRaah Academy</title>
-  <link rel="stylesheet" href="certificate.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link
+    rel="stylesheet"
+    href="certificate.css"
+  >
+
+  <!-- Fonts: headings, body text and signature -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
-  <div class="certificate">
-    <img src="logo.png" alt="CodeRaah Academy Logo" class="logo" />
-    <h2 class="academy-name">CodeRaah Academy</h2>
-    <p>We teach them to build, so they can rebuild the world </p>
-    <h1>CERTIFICATE OF COMPLETION</h1>
-    <p class="subheading">This is to certify that</p>
-    <h2 id="student-name">[Student Name]</h2>
-    <p class="subheading">has successfully completed the course</p>
-    <h3 id="course-title">[Course Title]</h3>
-    <p id="completion-date">[Date]</p>
-    <h4>SKILLS ACQUIRED</h4>
-    <ul id="skills-list"></ul>
-    <p class="closing">
-      With this certificate, the bearer is hereby recognized for completing all academic requirements with honor and merit, and is awarded with distinction by CodeRaah Academy under its seal and authority.
+  <main class="certificate">
+
+    <!-- Academy logo -->
+    <img
+      src="logo.png"
+      alt="CodeRaah Academy Logo"
+      class="logo"
+    >
+
+    <h2 class="academy-name">
+      CodeRaah Academy
+    </h2>
+
+    <p class="tagline">
+      We teach them to build, so they can rebuild the world
     </p>
-  </div>
+
+    <!-- Certificate title -->
+    <h1 id="certificate-title">
+      Certificate of Completion
+    </h1>
+
+    <p class="subheading">
+      This is to certify that
+    </p>
+
+    <!-- Recipient name -->
+    <h2 id="student-name">
+      [Student Name]
+    </h2>
+
+    <!-- Changes automatically for instructor certificate -->
+    <p
+      class="subheading"
+      id="achievement-text"
+    >
+      has successfully completed the course
+    </p>
+
+    <!-- Course title -->
+    <h3 id="course-title">
+      [Course Title]
+    </h3>
+
+    <!-- Completion date -->
+    <p id="completion-date">
+      [Date]
+    </p>
+
+    <!-- Skills / teaching contributions heading -->
+    <h4 id="skills-heading">
+      Skills Acquired
+    </h4>
+
+    <!-- Skills loaded from certificates.json -->
+    <ul id="skills-list"></ul>
+
+    <!-- Footer area -->
+    <section class="footer-area">
+
+      <div class="footer-content">
+
+        <!-- Footer text -->
+        <p
+          class="closing"
+          id="closing-text"
+        >
+          With this certificate, the bearer is hereby recognized for
+          completing all academic requirements with honor and merit, and is
+          awarded with distinction by CodeRaah Academy under its seal and
+          authority.
+        </p>
+
+        <!-- Seal and signature -->
+        <div class="stamp-block">
+
+          <img
+            src="stamp.png"
+            alt="CodeRaah Academy Seal"
+            class="stamp"
+          >
+
+          <p
+            class="signature-name"
+            id="signature-name"
+          >
+            Fatemeh Jafari
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <script>
     async function loadCertificate() {
       const params = new URLSearchParams(window.location.search);
-      const certId = params.get('id');
-      if (!certId) return;
+      const certificateId = params.get("id");
 
-      const res = await fetch('certificates.json');
-      const data = await res.json();
-      const cert = data.find(c => c.id === certId);
-
-      if (!cert) {
-        document.body.innerHTML = "<h2 style='text-align:center;'>❌ Certificate not found</h2>";
+      if (!certificateId) {
+        showError("Certificate ID is missing.");
         return;
       }
 
-      document.getElementById('student-name').textContent = cert.name;
-      document.getElementById('course-title').textContent = cert.course;
-      document.getElementById('completion-date').textContent = cert.date;
+      try {
+        const response = await fetch("certificates.json", {
+          cache: "no-store"
+        });
 
-      const skillsList = document.getElementById('skills-list');
-      cert.skills.forEach(skill => {
-        const li = document.createElement('li');
-        li.textContent = skill;
-        skillsList.appendChild(li);
-      });
+        if (!response.ok) {
+          throw new Error("Could not load certificates.json");
+        }
+
+        const certificates = await response.json();
+
+        const certificate = certificates.find(
+          item => item.id === certificateId
+        );
+
+        if (!certificate) {
+          showError("Certificate not found.");
+          return;
+        }
+
+        renderCertificate(certificate);
+
+      } catch (error) {
+        console.error(error);
+        showError("The certificate could not be loaded.");
+      }
     }
 
-    window.onload = loadCertificate;
+    function renderCertificate(certificate) {
+      const isInstructor =
+        certificate.id === "fatemehjafari";
+
+      // Common certificate fields
+      document.getElementById("student-name").textContent =
+        certificate.name;
+
+      document.getElementById("course-title").textContent =
+        certificate.course;
+
+      document.getElementById("completion-date").textContent =
+        certificate.date;
+
+      // Load skills
+      const skillsList =
+        document.getElementById("skills-list");
+
+      skillsList.innerHTML = "";
+
+      certificate.skills.forEach(skill => {
+        const listItem = document.createElement("li");
+        listItem.textContent = skill;
+        skillsList.appendChild(listItem);
+      });
+
+      // Dynamic elements
+      const certificateTitle =
+        document.getElementById("certificate-title");
+
+      const achievementText =
+        document.getElementById("achievement-text");
+
+      const skillsHeading =
+        document.getElementById("skills-heading");
+
+      const closingText =
+        document.getElementById("closing-text");
+
+      const signatureName =
+        document.getElementById("signature-name");
+
+      if (isInstructor) {
+        certificateTitle.textContent =
+          "Instructor Recognition Certificate";
+
+        achievementText.textContent =
+          "has served as Course Lead & Teaching Fellow for the program";
+
+        skillsHeading.textContent =
+          "Teaching Contributions";
+
+        closingText.textContent =
+          "In recognition of exemplary academic leadership, instructional excellence, and commitment to advancing computer science education, this certificate is awarded with distinction by CodeRaah Academy under its seal and authority.";
+
+        // Do not show Fatemeh Jafari as the signer
+        // on her own instructor certificate.
+        signatureName.hidden = true;
+
+      } else {
+        certificateTitle.textContent =
+          "Certificate of Completion";
+
+        achievementText.textContent =
+          "has successfully completed the course";
+
+        skillsHeading.textContent =
+          "Skills Acquired";
+
+        closingText.textContent =
+          "With this certificate, the bearer is hereby recognized for completing all academic requirements with honor and merit, and is awarded with distinction by CodeRaah Academy under its seal and authority.";
+
+        // Show signature name on student certificates.
+        signatureName.hidden = false;
+      }
+    }
+
+    function showError(message) {
+      document.body.innerHTML =
+        `<h2 class="error-message">${message}</h2>`;
+    }
+
+    window.addEventListener(
+      "DOMContentLoaded",
+      loadCertificate
+    );
   </script>
 </body>
 </html>
