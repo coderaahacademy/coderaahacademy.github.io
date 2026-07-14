@@ -1,582 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url(
+  'https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap'
+);
 
-:root {
-    --burgundy: #7b1f24;
-    --burgundy-dark: #521216;
-    --gold: #b18745;
-    --paper: #fffaf0;
-    --paper-dark: #f1e3c7;
-    --text: #2d2621;
-}
-
-/* ------------------------------
-   Page background
------------------------------- */
-
+/* Apply predictable width calculations */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 35px 18px;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    color: var(--text);
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(255, 255, 255, 0.9) 0%,
-            rgba(241, 227, 199, 0.92) 100%
-        ),
-        var(--paper-dark);
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: #f3e8d4;
+  font-family: 'Cormorant Garamond', serif;
 }
 
-/* ------------------------------
-   Main certificate
------------------------------- */
-
+/* Main certificate */
 .certificate {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
+  width: min(92vw, 1200px);
+  margin: 0 auto;
+  padding: 3rem 4rem;
 
-    width: min(100%, 920px);
-    min-height: 1120px;
-    margin: 0 auto;
-    padding: 55px 72px 65px;
+  background-color: #fef9ec;
 
-    text-align: center;
-    background:
-        linear-gradient(rgba(255, 250, 240, 0.95), rgba(255, 250, 240, 0.95)),
-        repeating-linear-gradient(
-            45deg,
-            rgba(177, 135, 69, 0.025) 0,
-            rgba(177, 135, 69, 0.025) 2px,
-            transparent 2px,
-            transparent 7px
-        );
+  border: 18px double #7a1f1f;
+  border-radius: 6px;
 
-    border: 5px solid var(--burgundy);
-    outline: 2px solid var(--burgundy);
-    outline-offset: -15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 
-    box-shadow:
-        0 22px 55px rgba(49, 28, 20, 0.25),
-        inset 0 0 45px rgba(177, 135, 69, 0.1);
+  text-align: center;
 }
 
-/* Inner ornamental border */
-
-.certificate::before {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    inset: 24px;
-
-    border: 1px solid var(--gold);
-    box-shadow:
-        0 0 0 4px var(--paper),
-        0 0 0 6px var(--burgundy),
-        0 0 0 9px var(--paper),
-        0 0 0 10px var(--gold);
-
-    pointer-events: none;
-}
-
-/* Large faded official watermark */
-
-.certificate::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-
-    width: 460px;
-    height: 460px;
-
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-8deg);
-
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    opacity: 0.055;
-    filter: sepia(1) saturate(1.8) contrast(1.1);
-
-    pointer-events: none;
-}
-
-/* Keep all content above watermark */
-
-.certificate > * {
-    position: relative;
-    z-index: 2;
-}
-
-/* ------------------------------
-   Logo and academy heading
------------------------------- */
-
+/* Academy logo */
 .logo {
-    display: block;
-    width: 105px;
-    height: 105px;
-    object-fit: contain;
-    margin: 0 auto 18px;
+  display: block;
+  width: 110px;
+  max-width: 25%;
+  height: auto;
+  margin: 0 auto 1.2rem;
 }
 
+/* Academy name */
 .academy-name {
-    margin: 0 0 8px;
+  margin: 0 0 0.35rem;
 
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 1.5px;
+  color: #7a1f1f;
 
-    color: var(--burgundy);
-    text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.academy-name + p {
-    margin: 0 0 27px;
-
-    font-size: 1.02rem;
-    font-weight: 500;
-    letter-spacing: 0.15px;
-
-    color: #2e2925;
+/* Academy tagline */
+.tagline {
+  margin: 0 0 1.8rem;
+  color: #333;
+  font-size: 1rem;
 }
 
-/* ------------------------------
-   Main certificate title
------------------------------- */
-
+/* Certificate heading */
 h1 {
-    position: relative;
-    margin: 0 auto 22px;
-    padding: 18px 0 16px;
+  margin: 0 0 0.8rem;
 
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 2.15rem;
-    font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: 2px;
+  color: #7a1f1f;
 
-    color: var(--burgundy);
-    text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-h1::before,
-h1::after {
-    content: "";
-    display: block;
-    width: 68%;
-    height: 1px;
-    margin: 0 auto;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--gold) 15%,
-        var(--burgundy) 50%,
-        var(--gold) 85%,
-        transparent
-    );
-}
-
-h1::before {
-    margin-bottom: 18px;
-}
-
-h1::after {
-    margin-top: 18px;
-}
-
-/* ------------------------------
-   Student and course information
------------------------------- */
-
+/* Supporting sentences */
 .subheading {
-    margin: 8px 0;
+  margin: 0.45rem 0;
 
-    font-size: 1.27rem;
-    line-height: 1.4;
-    font-style: italic;
+  color: #444;
 
-    color: #51453d;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Recipient and course titles */
+h2,
+h3 {
+  margin: 0.3rem 0;
+
+  color: #5b2c2c;
+
+  font-family: 'Cinzel', serif;
 }
 
 #student-name {
-    display: inline-block;
-    min-width: 320px;
-    margin: 5px 0 8px;
-    padding: 0 24px 6px;
-
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: 0.8px;
-
-    color: var(--burgundy-dark);
-    border-bottom: 1px solid rgba(177, 135, 69, 0.8);
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
 }
 
 #course-title {
-    margin: 6px auto 12px;
-    max-width: 720px;
-
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 1.52rem;
-    font-weight: 500;
-    line-height: 1.45;
-    letter-spacing: 0.5px;
-
-    color: #672429;
-    text-transform: uppercase;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
 }
 
+/* Date */
 #completion-date {
-    margin: 16px 0 28px;
+  margin: 1rem 0;
 
-    font-size: 1.07rem;
-    font-weight: 500;
-    font-style: italic;
+  color: #333;
 
-    color: #403832;
+  font-style: italic;
 }
 
-/* ------------------------------
-   Skills
------------------------------- */
-
+/* Skills heading */
 h4 {
-    display: inline-block;
-    margin: 5px 0 10px;
-    padding-bottom: 3px;
+  margin: 2rem 0 0;
 
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 1.13rem;
-    font-weight: 500;
-    letter-spacing: 0.7px;
+  color: #000;
 
-    color: #302824;
-    border-bottom: 1px solid var(--burgundy);
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
+/* Skills list */
 #skills-list {
-    display: block;
-    width: fit-content;
-    max-width: 670px;
-    margin: 12px auto 0;
-    padding-left: 24px;
+  display: inline-block;
 
-    text-align: left;
-    font-size: 1.06rem;
-    line-height: 1.45;
+  margin: 1rem auto 1.5rem;
+  padding-left: 1.5rem;
 
-    color: #29231f;
+  color: #000;
+
+  font-size: 1rem;
+  line-height: 1.35;
+
+  text-align: left;
 }
 
-#skills-list li {
-    margin: 3px 0;
-    padding-left: 5px;
+/*
+  Footer area:
+  the grey line is above both the text and the stamp.
+*/
+.footer-area {
+  margin-top: 0.4rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid #ccc;
 }
 
-#skills-list li::marker {
-    color: var(--burgundy);
+/*
+  Footer text stays on the left.
+  Stamp and signature stay on the right.
+*/
+.footer-content {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  gap: 1.5rem;
+  align-items: center;
 }
 
-/* ------------------------------
-   Closing section and seal
------------------------------- */
-
+/* Footer paragraph */
 .closing {
-    position: absolute !important;
-    right: 70px;
-    bottom: 78px;
-    left: 70px;
+  margin: 0;
 
-    min-height: 145px;
-    margin: 0;
-    padding: 28px 175px 0 15px;
+  color: #222;
 
-    font-size: 1.05rem;
-    line-height: 1.42;
-    font-style: italic;
-    text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.35;
 
-    color: #332b26;
-    border-top: 1px solid rgba(177, 135, 69, 0.7);
+  text-align: center;
 }
 
-/* Visible official stamp in the lower-right corner */
-
-.closing::after {
-    content: "";
-    position: absolute;
-
-    top: 16px;
-    right: 17px;
-
-    width: 135px;
-    height: 135px;
-
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    opacity: 0.92;
-    transform: rotate(-9deg);
-
-    filter:
-        sepia(0.25)
-        saturate(1.35)
-        contrast(1.08);
-
-    border-radius: 50%;
+/* Stamp and signature container */
+.stamp-block {
+  width: 135px;
+  text-align: center;
 }
 
-/* Small decorative signature line */
+/* Wax seal image */
+.stamp {
+  display: block;
 
-.closing::before {
-    content: "Official Seal";
-    position: absolute;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
 
-    right: 22px;
-    bottom: -8px;
+  margin: 0 auto;
 
-    width: 125px;
-    padding-top: 5px;
-
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 0.67rem;
-    font-style: normal;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-
-    color: var(--burgundy);
-    border-top: 1px solid var(--burgundy);
+  opacity: 0.95;
 }
 
-/* ------------------------------
-   Responsive view
------------------------------- */
+/* Signature name */
+.signature-name {
+  margin: 0.25rem 0 0;
 
-@media (max-width: 760px) {
-    body {
-        padding: 12px;
-    }
+  color: #5b2c2c;
 
-    .certificate {
-        min-height: 1030px;
-        padding: 45px 34px 55px;
-        border-width: 4px;
-        outline-offset: -12px;
-    }
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.45rem;
+  line-height: 1;
 
-    .certificate::before {
-        inset: 18px;
-    }
-
-    .certificate::after {
-        width: 330px;
-        height: 330px;
-    }
-
-    .logo {
-        width: 82px;
-        height: 82px;
-    }
-
-    .academy-name {
-        font-size: 1.7rem;
-    }
-
-    h1 {
-        font-size: 1.45rem;
-        letter-spacing: 1px;
-    }
-
-    #student-name {
-        min-width: 0;
-        width: 90%;
-        font-size: 1.55rem;
-    }
-
-    #course-title {
-        font-size: 1.15rem;
-    }
-
-    #skills-list {
-        font-size: 0.95rem;
-    }
-
-    .closing {
-        right: 38px;
-        bottom: 54px;
-        left: 38px;
-
-        min-height: 180px;
-        padding: 22px 0 115px;
-        font-size: 0.92rem;
-    }
-
-    .closing::after {
-        top: auto;
-        right: 50%;
-        bottom: 0;
-
-        width: 95px;
-        height: 95px;
-
-        transform: translateX(50%) rotate(-9deg);
-    }
-
-    .closing::before {
-        display: none;
-    }
+  white-space: nowrap;
 }
 
-/* ------------------------------
-   Print / Save as PDF
------------------------------- */
-
-@page {
-    size: A4 portrait;
-    margin: 0;
+/* Ensures hidden instructor signature disappears completely */
+.signature-name[hidden] {
+  display: none;
 }
 
+/* Error message */
+.error-message {
+  margin-top: 4rem;
+  color: #7a1f1f;
+  text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .certificate {
+    width: 100%;
+    padding: 2rem 1.25rem;
+
+    border-width: 10px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  /*
+    On mobile, the footer text and stamp stack vertically
+    to prevent overlapping.
+  */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .closing {
+    order: 1;
+  }
+
+  .stamp-block {
+    order: 2;
+
+    width: 120px;
+    margin: 0 auto;
+  }
+}
+
+/* Printing configuration */
 @media print {
-    html,
-    body {
-        width: 210mm;
-        height: 297mm;
-        margin: 0;
-        padding: 0;
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
 
-        background: white;
-        print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
-    }
+  body {
+    padding: 0;
+    background: #fff;
+  }
 
-    .certificate {
-        width: 210mm;
-        height: 297mm;
-        min-height: 297mm;
-        margin: 0;
-        padding: 15mm 18mm 18mm;
+  .certificate {
+    width: 100%;
+    max-width: none;
 
-        border-width: 4px;
-        border-radius: 0;
-        box-shadow: none;
+    margin: 0;
 
-        transform: none;
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
+    box-shadow: none;
 
-    .certificate::before {
-        inset: 7mm;
-    }
-
-    .certificate::after {
-        width: 115mm;
-        height: 115mm;
-    }
-
-    .logo {
-        width: 25mm;
-        height: 25mm;
-        margin-bottom: 3mm;
-    }
-
-    .academy-name {
-        font-size: 20pt;
-    }
-
-    .academy-name + p {
-        margin-bottom: 5mm;
-        font-size: 10pt;
-    }
-
-    h1 {
-        margin-bottom: 4mm;
-        padding: 3mm 0;
-        font-size: 18pt;
-    }
-
-    h1::before {
-        margin-bottom: 3mm;
-    }
-
-    h1::after {
-        margin-top: 3mm;
-    }
-
-    .subheading {
-        margin: 1.5mm 0;
-        font-size: 12pt;
-    }
-
-    #student-name {
-        margin: 1mm 0;
-        font-size: 17pt;
-    }
-
-    #course-title {
-        margin: 1mm auto 2mm;
-        font-size: 13pt;
-    }
-
-    #completion-date {
-        margin: 3mm 0 5mm;
-        font-size: 10.5pt;
-    }
-
-    h4 {
-        margin: 1mm 0 2mm;
-        font-size: 11pt;
-    }
-
-    #skills-list {
-        margin-top: 2mm;
-        font-size: 10pt;
-        line-height: 1.28;
-    }
-
-    .closing {
-        right: 18mm;
-        bottom: 17mm;
-        left: 18mm;
-
-        min-height: 34mm;
-        padding: 6mm 42mm 0 3mm;
-
-        font-size: 9.5pt;
-        line-height: 1.3;
-    }
-
-    .closing::after {
-        top: 3mm;
-        right: 3mm;
-        width: 31mm;
-        height: 31mm;
-    }
-
-    .closing::before {
-        right: 3mm;
-        bottom: -1mm;
-        width: 30mm;
-        font-size: 6pt;
-    }
+    break-inside: avoid;
+  }
 }
