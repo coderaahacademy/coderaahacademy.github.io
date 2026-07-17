@@ -1,544 +1,544 @@
 [
-  {
-    "id": "kosrakbari",
-    "name": "Kosar Akbari",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-    {
-    "id": "parmidaazd",
-    "name": "Parmida Azadbakht",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemehtat",
-    "name": "Fateme Tat",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "maryamghane",
-    "name": "Maryam Ghane",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-    {
-    "id": "sepiderajabi",
-    "name": "Sepideh Rajabinooreini",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-      {
-    "id": "noushinasghari",
-    "name": "Noushin Asghari",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-        {
-    "id": "zhrfalah",
-    "name": "zahra fallah zadeh",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-    {
-    "id": "shayestemos",
-    "name": "Shayesteh Sadat Mosavi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-    {
-    "id": "saeedehmohammadi",
-    "name": "Saeedeh Mohammadi",
-    "course": "Data Structures and Algorithms",
-    "date": "December, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "mobinababaee",
-    "name": "Mobina Babaee",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "haniehhamidanbavi",
-    "name": "Hanieh Hamidan Bavi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "faridebaylari",
-    "name": "Faride Baylari",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "yasamansafari",
-    "name": "Yasaman Safari",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "baharekiani",
-    "name": "Bahare Kiani",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "sanamsoltani",
-    "name": "Sanam Soltani",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "mehrnazebrahimi",
-    "name": "Mehrnaz Ebrahimi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "amirmohammadrezaeifar",
-    "name": "Amir Mohammad Rezaeifar",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "Aydamirshamsi",
-    "name": "Ayda Mirshamsi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "nasrinkhoshnoodifar",
-    "name": "Nasrin Khoshnoudifar",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "mahdiemostafapoor",
-    "name": "Mahdie Mostafapoor",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "maryampoursalmanahvazi",
-    "name": "Maryam Poursalman Ahvazi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemehsakhaei",
-    "name": "Fatemeh Sakhaei",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "rominareaisi",
-    "name": "Romina Raeisi Estabragh",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "parisadashtiarizadeh",
-    "name": "Parisa Dashtiarizadeh",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemeheeisvand",
-    "name": "Fatemeh Eisvand",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "aysanmovazzafi",
-    "name": "Aysan Movazzafi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "hosseinfathi",
-    "name": "Hossein Fathi",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "sajedeabbasalizade",
-    "name": "Sajede Abbasalizade",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "aisanahosseini",
-    "name": "Aisana Hosseini",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "amenehmortezazadeh",
-    "name": "Ameneh Mortezazadeh",
-    "course": "Data Structures and Algorithms",
-    "date": "October, 2025",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemehjafari",
-    "name": "Fatemeh Jafari",
-    "course": "Data Structures & Algorithmic Problem Solving",
-    "date": "October, 2025",
-    "skills": [
-      "Curriculum design and delivery for multi-level Data Structures and Algorithms education",
-      "Advanced data structures: Balanced Trees, Tries, B-Trees, Segment Trees, Fenwick Trees",
-      "Advanced algorithms: Graph algorithms, Dynamic Programming, and Greedy optimization strategies",
-      "Computational complexity theory and Big-O performance optimization",
-      "System-level applications: Caching strategies, Consistent Hashing, and Distributed Data Handling",
-      "Mentorship and evaluation for advanced technical interview preparation"
-    ]
-  },
-  {
-    "id": "yeganehazadipour",
-    "name": "Yeganeh Azadi Pour",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "samiramohammadi",
-    "name": "Samira Mohammadi",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "atenataghipour",
-    "name": "Atena Taghipour",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "denaemami",
-    "name": "Dena Emami",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "haniehghassemi",
-    "name": "Hanieh Ghassemi",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemehpedram",
-    "name": "Fatemeh Pedram",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "sanaamjadi",
-    "name": "Sana Amjadi",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "ilgardianati",
-    "name": "Ilgar Dianati",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "aylinbehnia",
-    "name": "Aylin Behnia",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemahusseini",
-    "name": "Fatema Husseini",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "royamahmoudikhatir",
-    "name": "Roya Mahmoudikhatir",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "mehregandastavareh",
-    "name": "Mehregan Dastavareh",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "maryammusawi",
-    "name": "Maryam Musawi",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  },
-  {
-    "id": "fatemehabdollahiyazdi",
-    "name": "Fatemeh Abdollahi Yazdi",
-    "course": "Data Structures and Algorithms",
-    "date": "July, 2026",
-    "skills": [
-      "Algorithmic thinking and structured pseudocode design",
-      "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
-      "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
-      "Time and Space Complexity analysis (Big-O notation)"
-    ]
-  }
+   {
+      "id":"kosrakbari",
+      "name":"Kosar Akbari",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"parmidaazd",
+      "name":"Parmida Azadbakht",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemehtat",
+      "name":"Fateme Tat",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"maryamghane",
+      "name":"Maryam Ghane",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"sepiderajabi",
+      "name":"Sepideh Rajabinooreini",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"noushinasghari",
+      "name":"Noushin Asghari",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"zhrfalah",
+      "name":"zahra fallah zadeh",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"shayestemos",
+      "name":"Shayesteh Sadat Mosavi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"saeedehmohammadi",
+      "name":"Saeedeh Mohammadi",
+      "course":"Data Structures and Algorithms",
+      "date":"December, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"mobinababaee",
+      "name":"Mobina Babaee",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"haniehhamidanbavi",
+      "name":"Hanieh Hamidan Bavi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"faridebaylari",
+      "name":"Faride Baylari",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"yasamansafari",
+      "name":"Yasaman Safari",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"baharekiani",
+      "name":"Bahare Kiani",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"sanamsoltani",
+      "name":"Sanam Soltani",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"mehrnazebrahimi",
+      "name":"Mehrnaz Ebrahimi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"amirmohammadrezaeifar",
+      "name":"Amir Mohammad Rezaeifar",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"Aydamirshamsi",
+      "name":"Ayda Mirshamsi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"nasrinkhoshnoodifar",
+      "name":"Nasrin Khoshnoudifar",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"mahdiemostafapoor",
+      "name":"Mahdie Mostafapoor",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"maryampoursalmanahvazi",
+      "name":"Maryam Poursalman Ahvazi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemehsakhaei",
+      "name":"Fatemeh Sakhaei",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"rominareaisi",
+      "name":"Romina Raeisi Estabragh",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"parisadashtiarizadeh",
+      "name":"Parisa Dashtiarizadeh",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemeheeisvand",
+      "name":"Fatemeh Eisvand",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"aysanmovazzafi",
+      "name":"Aysan Movazzafi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"hosseinfathi",
+      "name":"Hossein Fathi",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"sajedeabbasalizade",
+      "name":"Sajede Abbasalizade",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"aisanahosseini",
+      "name":"Aisana Hosseini",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"amenehmortezazadeh",
+      "name":"Ameneh Mortezazadeh",
+      "course":"Data Structures and Algorithms",
+      "date":"October, 2025",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemehjafari",
+      "name":"Fatemeh Jafari",
+      "course":"Data Structures & Algorithmic Problem Solving",
+      "date":"October, 2025",
+      "skills":[
+         "Curriculum design and delivery for multi-level Data Structures and Algorithms education",
+         "Advanced data structures: Balanced Trees, Tries, B-Trees, Segment Trees, Fenwick Trees",
+         "Advanced algorithms: Graph algorithms, Dynamic Programming, and Greedy optimization strategies",
+         "Computational complexity theory and Big-O performance optimization",
+         "System-level applications: Caching strategies, Consistent Hashing, and Distributed Data Handling",
+         "Mentorship and evaluation for advanced technical interview preparation"
+      ]
+   },
+   {
+      "id":"yeganehazadipour",
+      "name":"Yeganeh Azadi Pour",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"samiramohammadi",
+      "name":"Samira Mohammadi",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"atenataghipour",
+      "name":"Atena Taghipour",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"denaemami",
+      "name":"Dena Emami",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"haniehghassemi",
+      "name":"Hanieh Ghassemi",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemehpedram",
+      "name":"Fatemeh Pedram",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"sanaamjadi",
+      "name":"Sana Amjadi",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"ilgardianati",
+      "name":"Ilgar Dianati",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"aylinbehnia",
+      "name":"Aylin Behnia",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemahusseini",
+      "name":"Fatema Husseini",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"royamahmoudikhatir",
+      "name":"Roya Mahmoudikhatir",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"mehregandastavareh",
+      "name":"Mehregan Dastavareh",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"maryammusawi",
+      "name":"Maryam Musawi",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   },
+   {
+      "id":"fatemehabdollahiyazdi",
+      "name":"Fatemeh Abdollahi Yazdi",
+      "course":"Data Structures and Algorithms",
+      "date":"July, 2026",
+      "skills":[
+         "Algorithmic thinking and structured pseudocode design",
+         "Core data structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs",
+         "Key algorithms: Searching, Sorting, Divide-and-Conquer, Greedy techniques",
+         "Time and Space Complexity analysis (Big-O notation)"
+      ]
+   }
 ]
