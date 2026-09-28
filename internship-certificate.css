@@ -1,365 +1,1252 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Great+Vibes&display=swap');
+@import url(
+  'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Great+Vibes&display=swap'
+);
+
 
 :root {
-  --paper: #fffaf0;
-  --outer-paper: #f3e8d4;
-  --wine: #751f29;
-  --wine-deep: #4e171e;
-  --gold: #a8874b;
-  --gold-soft: #c7ad79;
-  --ink: #2c2621;
-  --ink-soft: #5d534a;
-  --line: rgba(168, 135, 75, .55);
+  --wine: #7a1721;
+  --wine-deep: #5d1119;
+
+  --gold: #a1762c;
+  --gold-light: #c19a55;
+
+  --ink: #30271f;
+  --ink-soft: #51473d;
+
+  --paper: #f6ead4;
 }
 
-* { box-sizing: border-box; }
 
-html, body { min-height: 100%; }
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  min-height: 100%;
+}
+
 
 body {
   margin: 0;
-  padding: 30px;
-  background: var(--outer-paper);
+  padding: 1.4rem;
+
+  background: #e7d7ba;
+
   color: var(--ink);
-  font-family: 'Cormorant Garamond', serif;
+
+  font-family:
+    'Cormorant Garamond',
+    Georgia,
+    serif;
 }
 
+
+/*
+  The certificate keeps the same aspect ratio
+  as the clean background artwork.
+*/
 .certificate {
-  width: min(96vw, 1414px);
-  aspect-ratio: 1.414 / 1;
-  min-height: 860px;
-  margin: 0 auto;
-  padding: 13px;
-  background: var(--paper);
-  border: 7px solid var(--wine);
-  box-shadow: 0 20px 60px rgba(53, 35, 23, .20);
+  position: relative;
+
+  isolation: isolate;
+
+  width: min(
+    97vw,
+    1448px
+  );
+
+  aspect-ratio:
+    1448 / 1086;
+
+  margin:
+    0 auto;
+
+  overflow:
+    hidden;
+
+  background:
+    var(--paper);
+
+  box-shadow:
+    0 18px 60px
+    rgba(
+      54,
+      35,
+      21,
+      0.24
+    );
 }
 
-.certificate-inner {
+
+/*
+  IMPORTANT:
+  This image has NO text.
+*/
+.certificate-background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
   width: 100%;
   height: 100%;
-  padding: 44px 78px 38px;
-  border: 3px solid var(--wine);
-  outline: 1px solid var(--gold-soft);
-  outline-offset: -9px;
-  background:
-    radial-gradient(circle at 15% 10%, rgba(168,135,75,.055), transparent 25%),
-    radial-gradient(circle at 90% 90%, rgba(117,31,41,.035), transparent 28%),
-    var(--paper);
+
+  object-fit: fill;
+
+  pointer-events: none;
+}
+
+
+.certificate-content {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  padding:
+    4.5% 8% 4%;
+
   display: flex;
+
   flex-direction: column;
 }
 
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .brand-header {
+  width:
+    min(
+      850px,
+      74%
+    );
+
+  min-height:
+    105px;
+
+  margin:
+    0 auto 0.3%;
+
   display: grid;
-  grid-template-columns: 1fr 52px 1fr;
-  align-items: center;
-  gap: 25px;
-  width: min(880px, 88%);
-  margin: 0 auto 18px;
+
+  grid-template-columns:
+    1fr 42px 1fr;
+
+  gap:
+    1.2rem;
+
+  align-items:
+    center;
 }
 
-.brand {
+
+.coderaah-brand {
   display: flex;
-  align-items: center;
-  gap: 16px;
+
+  align-items:
+    center;
+
+  justify-content:
+    flex-end;
+
+  gap:
+    0.8rem;
 }
 
-.code-raah-brand { justify-content: flex-end; text-align: right; }
 
-.code-raah-logo {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
+.coderaah-logo {
+  width:
+    94px;
+
+  height:
+    94px;
+
+  object-fit:
+    contain;
+
+  border-radius:
+    50%;
 }
+
+
+.coderaah-wording {
+  text-align:
+    left;
+}
+
 
 .academy-name {
-  color: var(--wine-deep);
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  white-space: nowrap;
+  color:
+    var(--wine-deep);
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  font-size:
+    clamp(
+      1.05rem,
+      2vw,
+      1.9rem
+    );
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.035em;
+
+  text-transform:
+    uppercase;
+
+  white-space:
+    nowrap;
 }
 
-.tagline {
-  margin-top: 4px;
-  color: var(--ink-soft);
-  font-size: 14px;
-  font-style: italic;
-  white-space: nowrap;
+
+.academy-tagline {
+  margin-top:
+    0.15rem;
+
+  color:
+    var(--ink-soft);
+
+  font-size:
+    clamp(
+      0.7rem,
+      1vw,
+      0.95rem
+    );
+
+  font-style:
+    italic;
+
+  white-space:
+    nowrap;
 }
+
 
 .brand-divider {
-  height: 78px;
-  position: relative;
-  display: grid;
-  place-items: center;
-  color: var(--gold);
+  position:
+    relative;
+
+  height:
+    92px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  color:
+    var(--gold);
 }
 
+
 .brand-divider::before {
-  content: '';
-  position: absolute;
+  position:
+    absolute;
+
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 1px;
-  background: var(--gold-soft);
+
+  width:
+    1px;
+
+  content:
+    "";
+
+  background:
+    rgba(
+      161,
+      118,
+      44,
+      0.78
+    );
 }
+
 
 .brand-divider span {
-  position: relative;
-  z-index: 1;
-  background: var(--paper);
-  padding: 6px 0;
-  font-size: 11px;
+  position:
+    relative;
+
+  z-index:
+    1;
+
+  padding:
+    0.3rem 0;
+
+  background:
+    #f4e7cf;
+
+  font-size:
+    0.65rem;
 }
+
 
 .medtrack-logo {
-  width: 305px;
-  height: auto;
+  width:
+    min(
+      100%,
+      330px
+    );
+
+  height:
+    auto;
+
+  justify-self:
+    start;
 }
 
-.main-copy { text-align: center; }
+
+/* =========================================================
+   MAIN TEXT
+   ========================================================= */
+
+.main-copy {
+  text-align:
+    center;
+}
+
 
 h1 {
-  margin: 0;
-  color: var(--wine-deep);
-  font-family: 'Cinzel', serif;
-  font-size: clamp(31px, 3.15vw, 46px);
-  font-weight: 400;
-  letter-spacing: .055em;
-  text-transform: uppercase;
+  margin:
+    0;
+
+  color:
+    var(--wine-deep);
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  font-size:
+    clamp(
+      2rem,
+      3.8vw,
+      3.5rem
+    );
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.018em;
+
+  line-height:
+    1.1;
+
+  text-transform:
+    uppercase;
 }
+
+
+.ornament {
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr auto 1fr;
+
+  align-items:
+    center;
+
+  gap:
+    0.75rem;
+
+  color:
+    var(--gold);
+}
+
+
+.ornament-title {
+  width:
+    min(
+      650px,
+      57%
+    );
+
+  margin:
+    0.65rem auto
+    0.3rem;
+}
+
+
+.ornament span {
+  height:
+    1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--gold)
+    );
+}
+
+
+.ornament span:last-child {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      var(--gold)
+    );
+}
+
+
+.ornament b {
+  font-size:
+    1.7rem;
+
+  font-weight:
+    400;
+
+  line-height:
+    0.8;
+}
+
 
 .certify {
-  margin: 8px 0 0;
-  color: var(--ink-soft);
-  font-size: 21px;
-  font-style: italic;
+  margin:
+    0.25rem 0 0;
+
+  color:
+    var(--ink-soft);
+
+  font-size:
+    clamp(
+      1.05rem,
+      1.7vw,
+      1.5rem
+    );
+
+  font-style:
+    italic;
 }
+
+
+/* =========================================================
+   NAME
+   ========================================================= */
+
+.name-row,
+.project-row {
+  width:
+    min(
+      850px,
+      77%
+    );
+
+  margin:
+    0.1rem auto 0;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      50px,
+      1fr
+    )
+    auto
+    auto
+    auto
+    minmax(
+      50px,
+      1fr
+    );
+
+  gap:
+    0.65rem;
+
+  align-items:
+    center;
+}
+
+
+.short-line {
+  height:
+    1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--gold)
+    );
+}
+
+
+.short-line.reversed {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      var(--gold)
+    );
+}
+
+
+.flourish {
+  color:
+    var(--gold);
+
+  font-size:
+    1.35rem;
+
+  line-height:
+    1;
+}
+
+
+.mirrored {
+  display:
+    inline-block;
+
+  transform:
+    scaleX(-1);
+}
+
 
 h2 {
-  margin: 2px 0 0;
-  color: var(--wine);
-  font-family: 'Cinzel', serif;
-  font-size: clamp(31px, 3vw, 43px);
-  font-weight: 500;
-  letter-spacing: .025em;
-  text-transform: uppercase;
+  margin:
+    0;
+
+  color:
+    var(--wine);
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  font-size:
+    clamp(
+      1.9rem,
+      3.25vw,
+      3rem
+    );
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.012em;
+
+  line-height:
+    1.08;
+
+  text-transform:
+    uppercase;
+
+  white-space:
+    nowrap;
 }
 
-.person-meta {
-  margin: 2px 0 0;
-  color: var(--ink-soft);
-  font-size: 17px;
-  line-height: 1.45;
+
+.student-meta {
+  margin-top:
+    0.2rem;
+
+  color:
+    var(--ink);
+
+  font-size:
+    clamp(
+      0.85rem,
+      1.35vw,
+      1.15rem
+    );
+
+  line-height:
+    1.25;
 }
 
-.person-meta span { display: block; }
 
-.completion-copy {
-  margin: 9px auto 0;
-  max-width: 1060px;
-  color: var(--ink-soft);
-  font-size: 19px;
-  font-style: italic;
-  line-height: 1.35;
+.completion-sentence {
+  max-width:
+    930px;
+
+  margin:
+    0.8rem auto 0;
+
+  color:
+    var(--ink-soft);
+
+  font-size:
+    clamp(
+      0.9rem,
+      1.4vw,
+      1.18rem
+    );
+
+  font-style:
+    italic;
+
+  line-height:
+    1.25;
 }
+
+
+.completion-sentence strong {
+  font-weight:
+    600;
+}
+
+
+/* =========================================================
+   PROJECT
+   ========================================================= */
+
+.project-row {
+  width:
+    min(
+      690px,
+      66%
+    );
+
+  margin-top:
+    0.3rem;
+}
+
 
 .project-name {
-  margin-top: 5px;
-  color: var(--wine-deep);
-  font-family: 'Cinzel', serif;
-  font-size: 37px;
-  font-weight: 500;
-  letter-spacing: .05em;
-  text-transform: uppercase;
+  color:
+    var(--wine-deep);
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  font-size:
+    clamp(
+      1.8rem,
+      3vw,
+      2.6rem
+    );
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.045em;
+
+  text-transform:
+    uppercase;
+
+  white-space:
+    nowrap;
 }
+
 
 .project-subtitle {
-  margin-top: -1px;
-  color: var(--wine);
-  font-family: 'Cinzel', serif;
-  font-size: 17px;
-  letter-spacing: .10em;
-  text-transform: uppercase;
+  margin-top:
+    -0.05rem;
+
+  color:
+    var(--wine);
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  font-size:
+    clamp(
+      0.7rem,
+      1.25vw,
+      1rem
+    );
+
+  letter-spacing:
+    0.14em;
+
+  text-transform:
+    uppercase;
 }
+
 
 .completion-date {
-  margin: 6px 0 0;
-  color: var(--ink-soft);
-  font-size: 17px;
-  font-style: italic;
+  margin-top:
+    0.25rem;
+
+  color:
+    var(--ink-soft);
+
+  font-size:
+    clamp(
+      0.8rem,
+      1.2vw,
+      1.05rem
+    );
+
+  font-style:
+    italic;
 }
+
+
+/* =========================================================
+   ENGINEERING EXPERIENCE
+   ========================================================= */
 
 .experience-section {
-  width: min(790px, 76%);
-  margin: 15px auto 0;
+  width:
+    min(
+      1040px,
+      82%
+    );
+
+  margin:
+    0.75rem auto 0;
 }
 
-.experience-section h3 {
-  margin: 0 0 8px;
-  color: var(--wine);
-  font-family: 'Cinzel', serif;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: .07em;
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-transform: uppercase;
+
+.experience-heading {
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr auto auto auto 1fr;
+
+  gap:
+    0.55rem;
+
+  align-items:
+    center;
+
+  color:
+    var(--gold);
 }
 
-.experience-section ul {
-  margin: 0;
-  padding-left: 21px;
-  color: var(--ink);
-  font-size: 15px;
-  line-height: 1.30;
+
+.heading-line {
+  height:
+    1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--gold)
+    );
 }
 
-.experience-section li::marker { color: var(--wine); }
+
+.heading-line.reversed {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      var(--gold)
+    );
+}
+
+
+.heading-flourish {
+  font-size:
+    1.15rem;
+}
+
+
+.experience-heading h3 {
+  margin:
+    0;
+
+  padding:
+    0.38rem 1.7rem
+    0.33rem;
+
+  color:
+    var(--wine);
+
+  background:
+    rgba(
+      249,
+      239,
+      220,
+      0.72
+    );
+
+  border:
+    1px solid
+    rgba(
+      161,
+      118,
+      44,
+      0.72
+    );
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  font-size:
+    clamp(
+      0.7rem,
+      1.25vw,
+      1rem
+    );
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.17em;
+
+  text-transform:
+    uppercase;
+
+  white-space:
+    nowrap;
+}
+
+
+.experience-grid {
+  position:
+    relative;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:
+    0.42rem 4rem;
+
+  padding:
+    0.9rem 2.1rem
+    0.45rem;
+}
+
+
+.experience-grid::after {
+  position:
+    absolute;
+
+  top:
+    0.7rem;
+
+  bottom:
+    0.35rem;
+
+  left:
+    50%;
+
+  width:
+    1px;
+
+  content:
+    "";
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(
+        161,
+        118,
+        44,
+        0.78
+      )
+      16%,
+      rgba(
+        161,
+        118,
+        44,
+        0.78
+      )
+      84%,
+      transparent
+    );
+}
+
+
+.competency {
+  display:
+    grid;
+
+  grid-template-columns:
+    16px 1fr;
+
+  gap:
+    0.5rem;
+
+  align-items:
+    start;
+
+  color:
+    var(--ink);
+
+  font-size:
+    clamp(
+      0.72rem,
+      1vw,
+      0.98rem
+    );
+
+  line-height:
+    1.25;
+}
+
+
+.competency-bullet {
+  padding-top:
+    0.15rem;
+
+  color:
+    var(--gold);
+
+  font-size:
+    0.62rem;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 .certificate-footer {
-  margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 205px;
-  gap: 30px;
-  align-items: center;
+  width:
+    88%;
+
+  margin:
+    auto auto 0;
+
+  padding-top:
+    0.8rem;
+
+  border-top:
+    1px solid
+    rgba(
+      161,
+      118,
+      44,
+      0.72
+    );
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      0,
+      1fr
+    )
+    285px;
+
+  gap:
+    1.4rem;
+
+  align-items:
+    end;
 }
+
 
 .recognition-block {
-  text-align: center;
-  color: var(--ink-soft);
+  padding-left:
+    1.4rem;
+
+  text-align:
+    center;
+
+  color:
+    var(--ink-soft);
 }
 
-.recognition-block > p:first-child {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 1.36;
+
+.recognition-text {
+  max-width:
+    780px;
+
+  margin:
+    0 auto;
+
+  font-size:
+    clamp(
+      0.68rem,
+      1.05vw,
+      0.9rem
+    );
+
+  font-style:
+    italic;
+
+  line-height:
+    1.28;
 }
 
-.certificate-id,
+
+.certificate-id {
+  margin:
+    0.65rem 0 0;
+
+  font-size:
+    clamp(
+      0.58rem,
+      0.85vw,
+      0.76rem
+    );
+}
+
+
 .verification {
-  margin: 8px 0 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 12px;
-  font-style: normal;
-  letter-spacing: .04em;
+  margin:
+    0.1rem 0 0;
+
+  font-size:
+    clamp(
+      0.48rem,
+      0.7vw,
+      0.64rem
+    );
 }
 
-.verification { margin-top: 2px; font-size: 10px; }
+
+/* =========================================================
+   SEAL + SIGNATURE
+   ========================================================= */
 
 .authority-block {
-  justify-self: end;
-  width: 190px;
-  text-align: center;
+  position:
+    relative;
+
+  min-height:
+    130px;
+
+  padding:
+    1.1rem 0.2rem
+    0 108px;
+
+  text-align:
+    center;
 }
 
-.seal {
-  display: block;
-  width: 118px;
-  height: 118px;
-  margin: 0 auto -1px;
-  transform: rotate(-3deg);
+
+.wax-seal {
+  position:
+    absolute;
+
+  left:
+    -5px;
+
+  bottom:
+    -5px;
+
+  width:
+    125px;
+
+  height:
+    auto;
+
+  transform:
+    rotate(
+      -4deg
+    );
 }
+
 
 .signature {
-  color: var(--wine-deep);
-  font-family: 'Great Vibes', cursive;
-  font-size: 30px;
-  line-height: 1;
-  white-space: nowrap;
+  color:
+    var(--wine);
+
+  font-family:
+    'Great Vibes',
+    cursive;
+
+  font-size:
+    clamp(
+      1.55rem,
+      2.6vw,
+      2.35rem
+    );
+
+  line-height:
+    1;
+
+  white-space:
+    nowrap;
 }
+
 
 .signature-rule {
-  height: 1px;
-  margin: 5px 8px 4px;
-  background: var(--gold);
+  position:
+    relative;
+
+  height:
+    1px;
+
+  margin:
+    0.45rem 0 0.25rem;
+
+  background:
+    var(--gold);
 }
+
+
+.signature-rule span {
+  position:
+    absolute;
+
+  top:
+    50%;
+
+  left:
+    50%;
+
+  padding:
+    0 0.3rem;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    );
+
+  background:
+    #f3e5cd;
+
+  color:
+    var(--gold);
+
+  font-size:
+    0.55rem;
+}
+
 
 .signature-role {
-  color: var(--ink-soft);
-  font-size: 12px;
+  color:
+    var(--ink-soft);
+
+  font-size:
+    clamp(
+      0.6rem,
+      0.85vw,
+      0.75rem
+    );
 }
 
-.error {
-  max-width: 850px;
-  margin: 80px auto;
-  padding: 25px;
-  color: var(--wine-deep);
-  background: var(--paper);
-  border: 2px solid var(--wine);
-  font-family: 'Cinzel', serif;
-  text-align: center;
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.error-message {
+  max-width:
+    850px;
+
+  margin:
+    5rem auto;
+
+  padding:
+    1.7rem;
+
+  background:
+    var(--paper);
+
+  border:
+    4px double
+    var(--wine);
+
+  color:
+    var(--wine);
+
+  font-family:
+    'Cinzel',
+    serif;
+
+  text-align:
+    center;
 }
 
-@media (max-width: 900px) {
-  body { padding: 0; }
-  .certificate { width: 100%; aspect-ratio: auto; min-height: 100vh; }
-  .certificate-inner { padding: 42px 24px; }
-  .brand-header { grid-template-columns: 1fr; width: 100%; }
-  .code-raah-brand { justify-content: center; text-align: left; }
-  .brand-divider { display: none; }
-  .medtrack-logo { justify-self: center; }
-  .experience-section { width: 100%; }
-  .certificate-footer { grid-template-columns: 1fr; }
-  .authority-block { justify-self: center; }
-}
 
-@media print {
-  @page { size: A4 landscape; margin: 0; }
+/* =========================================================
+   SMALL SCREENS
+   Preserve the actual certificate rather than redesigning it.
+   ========================================================= */
 
-  html, body { width: 297mm; height: 210mm; }
+@media (
+  max-width:
+  900px
+) {
 
   body {
-    padding: 0;
-    background: #fff;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    padding:
+      0;
+
+    overflow-x:
+      auto;
   }
+
 
   .certificate {
-    width: 297mm;
-    height: 210mm;
-    min-height: 0;
-    margin: 0;
-    padding: 3mm;
-    box-shadow: none;
-    break-inside: avoid;
+    width:
+      1050px;
+
+    max-width:
+      none;
+  }
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+  @page {
+    size:
+      A4 landscape;
+
+    margin:
+      0;
   }
 
-  .certificate-inner {
-    padding: 8mm 14mm 7mm;
+
+  html,
+  body {
+    width:
+      297mm;
+
+    height:
+      210mm;
   }
 
-  .brand-header { margin-bottom: 3mm; }
-  .code-raah-logo { width: 14mm; height: 14mm; }
-  .academy-name { font-size: 14pt; }
-  .tagline { font-size: 8.5pt; }
-  .medtrack-logo { width: 52mm; }
-  h1 { font-size: 25pt; }
-  .certify { font-size: 12pt; }
-  h2 { font-size: 24pt; }
-  .person-meta { font-size: 10pt; }
-  .completion-copy { font-size: 11pt; }
-  .project-name { font-size: 22pt; }
-  .project-subtitle { font-size: 10pt; }
-  .completion-date { font-size: 10pt; }
-  .experience-section { margin-top: 3mm; }
-  .experience-section h3 { font-size: 10pt; }
-  .experience-section ul { font-size: 9pt; line-height: 1.2; }
-  .certificate-footer { padding-top: 2.5mm; }
-  .recognition-block > p:first-child { font-size: 9.5pt; }
-  .certificate-id { font-size: 8pt; }
-  .verification { font-size: 6.5pt; }
-  .seal { width: 24mm; height: 24mm; }
-  .signature { font-size: 20pt; }
-  .signature-role { font-size: 7.5pt; }
+
+  body {
+    padding:
+      0;
+
+    background:
+      white;
+
+    -webkit-print-color-adjust:
+      exact;
+
+    print-color-adjust:
+      exact;
+  }
+
+
+  .certificate {
+    width:
+      297mm;
+
+    height:
+      210mm;
+
+    margin:
+      0;
+
+    box-shadow:
+      none;
+  }
 }

@@ -8,27 +8,11 @@
     "program": "Backend Software Engineering Internship",
     "project": "MedTrack",
     "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
-    "track": "Java / Spring Boot Backend Engineering",
-    "period": "August 2026 – September 2026",
-    "status": "completed",
     "completionDate": "September 2026",
-    "issueDate": "25 September 2026",
-    "location": "Remote",
-    "organization": "CodeRaah Academy",
+    "status": "completed",
     "supervisor": "Fatemeh Jafari",
     "supervisorTitle": "Program Lead & Founder",
     "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=haniehhamidanbavi",
-    "technologies": [
-      "Java 21",
-      "Spring Boot 3.4.3",
-      "Spring Data JPA / Hibernate",
-      "PostgreSQL",
-      "Jakarta Validation",
-      "Maven",
-      "REST APIs",
-      "JUnit / Spring Boot Test",
-      "Git & GitHub"
-    ],
     "competencies": [
       "Layered backend architecture using Controller, Service, Repository and DTO patterns",
       "REST API design and implementation",
@@ -36,16 +20,6 @@
       "Persistence with JPA / Hibernate and PostgreSQL",
       "Validation, centralized exception handling and automated testing",
       "Git and GitHub collaborative development workflow"
-    ],
-    "projectDomains": [
-      "Patient management and medical profiles",
-      "Doctor profiles, specialties and patient–doctor relationships",
-      "Doctor availability and schedule exceptions",
-      "Appointment booking and lifecycle management",
-      "Patient allergies and medical conditions",
-      "Clinical visits and medical reports",
-      "Medication catalog and prescription workflows",
-      "Pharmacy and inventory foundations"
     ]
   }
 ]
