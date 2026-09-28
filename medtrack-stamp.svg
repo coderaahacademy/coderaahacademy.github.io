@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
+  <title id="title">MedTrack Internship Seal</title>
+  <desc id="desc">Circular CodeRaah Academy MedTrack engineering internship seal.</desc>
+  <defs>
+    <path id="topArc" d="M 64,210 A 146,146 0 0,1 356,210"/>
+  </defs>
+
+  <g fill="none" stroke="#751f29">
+    <circle cx="210" cy="210" r="190" stroke-width="7"/>
+    <circle cx="210" cy="210" r="174" stroke-width="2"/>
+    <circle cx="210" cy="210" r="134" stroke-width="3"/>
+    <circle cx="210" cy="210" r="120" stroke-width="1.5" stroke-dasharray="4 7"/>
+  </g>
+
+  <text fill="#751f29" font-family="Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="5" font-size="24">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">CODERAAH ACADEMY</textPath>
+  </text>
+
+  <circle cx="68" cy="210" r="5" fill="#a8874b"/>
+  <circle cx="352" cy="210" r="5" fill="#a8874b"/>
+
+  <g transform="translate(210 198)" fill="#751f29">
+    <path d="M-57 48V-43h25L0-3l32-40h25v91H32V-8L0 32-32-8v56z"/>
+    <rect x="40" y="-71" width="17" height="52" rx="4" fill="#a8874b"/>
+    <rect x="22" y="-53" width="53" height="17" rx="4" fill="#a8874b"/>
+  </g>
+
+  <path d="M105 266h53l14-27 19 42 21-41 17 26h86" fill="none" stroke="#a8874b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="210" y="316" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="5" fill="#751f29">MEDTRACK</text>
+  <text x="210" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#751f29">ENGINEERING INTERNSHIP</text>
+</svg>

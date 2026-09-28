@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MedTrack Backend Software Engineering Internship completion certificate issued by CodeRaah Academy.">
+  <title>MedTrack Internship Completion Certificate — CodeRaah Academy</title>
+  <link rel="stylesheet" href="internship-certificate.css">
+</head>
+<body>
+  <main class="certificate" id="certificate" hidden>
+    <div class="certificate-inner">
+      <header class="brand-header">
+        <div class="brand code-raah-brand">
+          <img src="logo.png" class="code-raah-logo" alt="CodeRaah Academy">
+          <div>
+            <div class="academy-name">CodeRaah Academy</div>
+            <div class="tagline">We teach them to build, so they can rebuild the world</div>
+          </div>
+        </div>
+
+        <div class="brand-divider" aria-hidden="true"><span>◆</span></div>
+
+        <img src="medtrack-logo.svg" class="medtrack-logo" alt="MedTrack Healthcare Engineering">
+      </header>
+
+      <section class="main-copy">
+        <h1>Internship Completion Certificate</h1>
+        <p class="certify">This is to certify that</p>
+        <h2 id="name"></h2>
+        <p class="person-meta">
+          <span>Date of Birth: <strong id="dob"></strong></span>
+          <span id="university"></span>
+        </p>
+
+        <p class="completion-copy">
+          has successfully completed the <strong id="program"></strong> and contributed to the development of
+        </p>
+
+        <div class="project-name" id="project"></div>
+        <div class="project-subtitle" id="project-subtitle"></div>
+        <p class="completion-date" id="completion-date"></p>
+      </section>
+
+      <section class="experience-section">
+        <h3>Engineering Experience</h3>
+        <ul id="competencies"></ul>
+      </section>
+
+      <footer class="certificate-footer">
+        <div class="recognition-block">
+          <p>
+            This certificate formally recognizes the participant's successful completion of the MedTrack internship program
+            and their practical software engineering work under the academic guidance and authority of CodeRaah Academy.
+          </p>
+          <p class="certificate-id">Certificate ID: <strong id="certificate-id"></strong></p>
+          <p class="verification">Verification: <span id="verification-url"></span></p>
+        </div>
+
+        <div class="authority-block">
+          <img src="medtrack-stamp.svg" class="seal" alt="CodeRaah Academy MedTrack Engineering Internship Seal">
+          <div class="signature" id="supervisor"></div>
+          <div class="signature-rule"></div>
+          <div class="signature-role" id="supervisor-title"></div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <div class="error" id="error" hidden></div>
+
+  <script>
+    const $ = id => document.getElementById(id);
+
+    function fail(message) {
+      $('error').textContent = message;
+      $('error').hidden = false;
+    }
+
+    async function loadCertificate() {
+      const id = new URLSearchParams(window.location.search).get('id');
+      if (!id) {
+        fail('Certificate ID is missing. Example: ?id=haniehhamidanbavi');
+        return;
+      }
+
+      try {
+        const response = await fetch('interns.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('interns.json could not be loaded');
+
+        const interns = await response.json();
+        const intern = interns.find(item => item.id === id);
+        if (!intern) {
+          fail('Internship certificate not found.');
+          return;
+        }
+
+        if (intern.status !== 'completed') {
+          fail('This certificate is available only after the internship is completed.');
+          return;
+        }
+
+        $('name').textContent = intern.name;
+        $('dob').textContent = intern.dateOfBirth;
+        $('university').textContent = intern.university;
+        $('program').textContent = intern.program;
+        $('project').textContent = intern.project;
+        $('project-subtitle').textContent = intern.projectSubtitle || 'Healthcare & Clinical Practice Management Backend';
+        $('completion-date').textContent = intern.completionDate || intern.issueDate;
+        $('certificate-id').textContent = intern.certificateId;
+        $('verification-url').textContent = intern.verificationUrl;
+        $('supervisor').textContent = intern.supervisor;
+        $('supervisor-title').textContent = intern.supervisorTitle;
+
+        const list = $('competencies');
+        list.innerHTML = '';
+        intern.competencies.forEach(competency => {
+          const li = document.createElement('li');
+          li.textContent = competency;
+          list.appendChild(li);
+        });
+
+        document.title = `${intern.name} — MedTrack Internship Completion Certificate`;
+        $('certificate').hidden = false;
+      } catch (error) {
+        console.error(error);
+        fail('The certificate could not be loaded.');
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', loadCertificate);
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-labelledby="title desc">
+  <title id="title">MedTrack Logo</title>
+  <desc id="desc">MedTrack medical technology logo with an M monogram, clinical cross and heartbeat line.</desc>
+  <defs>
+    <linearGradient id="wine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4e171e"/>
+      <stop offset="1" stop-color="#8f3440"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8f713e"/>
+      <stop offset="1" stop-color="#c7ad79"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(20 18)">
+    <rect x="0" y="0" width="184" height="184" rx="38" fill="#fffaf0" stroke="#c7ad79" stroke-width="4"/>
+    <rect x="12" y="12" width="160" height="160" rx="31" fill="none" stroke="#751f29" stroke-width="2" opacity=".55"/>
+
+    <path d="M43 131V53h22l28 39 27-39h22v78h-23V88l-26 36-27-36v43z" fill="url(#wine)"/>
+
+    <rect x="128" y="29" width="16" height="50" rx="5" fill="url(#gold)"/>
+    <rect x="111" y="46" width="50" height="16" rx="5" fill="url(#gold)"/>
+
+    <path d="M27 145h31l10-21 13 34 14-27 10 14h52" fill="none" stroke="#a8874b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(235 52)">
+    <text x="0" y="65" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="2" fill="#4e171e">MedTrack</text>
+    <line x1="2" y1="88" x2="430" y2="88" stroke="#c7ad79" stroke-width="2"/>
+    <text x="2" y="120" font-family="Arial, sans-serif" font-size="18" letter-spacing="4" fill="#751f29">HEALTHCARE ENGINEERING</text>
+  </g>
+</svg>

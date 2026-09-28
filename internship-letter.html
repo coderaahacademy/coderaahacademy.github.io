@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedTrack Internship Verification Letter — CodeRaah Academy</title>
+  <link rel="stylesheet" href="internship-letter.css">
+</head>
+<body>
+  <main class="letter" id="letter-root" hidden>
+    <header class="letter-head">
+      <div class="brand">
+        <h1>CodeRaah Academy</h1>
+        <p>Software Engineering Education & Project-Based Internship Programs</p>
+      </div>
+      <img class="logo" src="medtrack-logo.svg" alt="MedTrack Healthcare Engineering">
+    </header>
+
+    <section class="meta">
+      <div><strong>Date:</strong> <span id="issue-date"></span></div>
+      <div><strong>Reference:</strong> <span id="certificate-id"></span></div>
+      <div><strong>Intern:</strong> <span id="intern-name"></span></div>
+      <div><strong>Date of Birth:</strong> <span id="date-of-birth"></span></div>
+      <div><strong>University:</strong> <span id="university"></span></div>
+      <div><strong>Internship Period:</strong> <span id="period"></span></div>
+    </section>
+
+    <h2 class="subject" id="subject"></h2>
+
+    <p>To whom it may concern,</p>
+
+    <p id="opening"></p>
+
+    <p>
+      MedTrack is a project-based healthcare and clinical practice management backend. The internship is structured around real software-engineering workflows rather than tutorial-only exercises. Interns work from defined feature tickets, translate business requirements into backend designs, implement maintainable code, write automated tests, and participate in Git-based review and delivery practices.
+    </p>
+
+    <h3 class="section-title">Technical scope of the internship</h3>
+    <div class="tech" id="technologies"></div>
+
+    <h3 class="section-title">Practical engineering competencies</h3>
+    <ul id="competencies"></ul>
+
+    <h3 class="section-title">MedTrack functional domains</h3>
+    <ul id="domains"></ul>
+
+    <p>
+      The program emphasizes layered backend architecture, separation of concerns, DTO-based API contracts, validation, persistence modelling, explicit business rules, historical-data preservation, lifecycle/state transitions, error handling, testability, and professional collaboration through source control.
+    </p>
+
+    <p id="status-paragraph"></p>
+
+    <p class="closing-note" id="note"></p>
+
+    <div class="signing">
+      <div class="signature">
+        <p class="signature-script" id="supervisor"></p>
+        <div class="sig-line"></div>
+        <p class="sig-role" id="supervisor-title"></p>
+      </div>
+      <img class="seal" src="medtrack-stamp.svg" alt="MedTrack Engineering Internship Seal">
+    </div>
+
+    <div class="verify">
+      Verification reference: <strong id="verify-id"></strong><br>
+      Online verification: <span id="verification-url"></span>
+    </div>
+  </main>
+
+  <h2 class="error-message" id="error" hidden></h2>
+
+  <script>
+    async function loadLetter() {
+      const id = new URLSearchParams(window.location.search).get('id');
+      if (!id) return showError('Intern ID is missing. Add ?id=haniehhamidanbavi to the URL.');
+
+      try {
+        const response = await fetch('interns.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Could not load interns.json');
+        const interns = await response.json();
+        const intern = interns.find(item => item.id === id);
+        if (!intern) return showError('Internship record not found.');
+        render(intern);
+      } catch (error) {
+        console.error(error);
+        showError('The internship letter could not be loaded. Serve the folder through a web server or GitHub Pages.');
+      }
+    }
+
+    function render(intern) {
+      const completed = intern.status === 'completed';
+      const byId = id => document.getElementById(id);
+      const set = (id, text) => byId(id).textContent = text || '—';
+
+      set('issue-date', intern.issueDate);
+      set('certificate-id', intern.certificateId);
+      set('verify-id', intern.certificateId);
+      set('intern-name', intern.name);
+      set('date-of-birth', intern.dateOfBirth);
+      set('university', intern.university);
+      set('period', intern.period);
+      set('supervisor', intern.supervisor);
+      set('supervisor-title', intern.supervisorTitle);
+      set('verification-url', intern.verificationUrl);
+      set('note', intern.note);
+
+      set('subject', completed
+        ? `Subject: Internship Completion Verification — ${intern.name}`
+        : `Subject: Internship Participation Verification — ${intern.name}`);
+
+      byId('opening').innerHTML = completed
+        ? `This letter formally confirms that <strong>${safe(intern.name)}</strong>, born on <strong>${safe(intern.dateOfBirth)}</strong> and affiliated with <strong>${safe(intern.university)}</strong>, successfully completed the <strong>${safe(intern.program)}</strong> at <strong>${safe(intern.organization)}</strong> within the <strong>${safe(intern.project)}</strong> project.`
+        : `This letter formally confirms that <strong>${safe(intern.name)}</strong>, born on <strong>${safe(intern.dateOfBirth)}</strong> and affiliated with <strong>${safe(intern.university)}</strong>, is currently participating in the <strong>${safe(intern.program)}</strong> at <strong>${safe(intern.organization)}</strong> within the <strong>${safe(intern.project)}</strong> project.`;
+
+      byId('status-paragraph').innerHTML = completed
+        ? `The internship record is marked as <strong>completed</strong>. This letter may be used as supporting evidence of the project-based technical experience described above.`
+        : `The internship record is currently marked as <strong>in progress</strong>. This letter confirms active participation and program scope as of <strong>${safe(intern.issueDate)}</strong>; it should not be interpreted as a completion certificate until the status is updated to completed.`;
+
+      const tech = byId('technologies');
+      intern.technologies.forEach(item => {
+        const span = document.createElement('span');
+        span.className = 'pill';
+        span.textContent = item;
+        tech.appendChild(span);
+      });
+
+      fillList('competencies', intern.competencies);
+      fillList('domains', intern.projectDomains);
+
+      document.title = `${intern.name} — MedTrack Internship Verification Letter`;
+      byId('letter-root').hidden = false;
+    }
+
+    function fillList(id, items) {
+      const ul = document.getElementById(id);
+      items.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        ul.appendChild(li);
+      });
+    }
+
+    function safe(value = '') {
+      return value.replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+    }
+
+    function showError(message) {
+      const error = document.getElementById('error');
+      error.textContent = message;
+      error.hidden = false;
+    }
+
+    window.addEventListener('DOMContentLoaded', loadLetter);
+  </script>
+</body>
+</html>

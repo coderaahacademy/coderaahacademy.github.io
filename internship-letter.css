@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&display=swap');
+
+:root {
+  --paper: #fffaf0;
+  --wine: #751f29;
+  --wine-deep: #4e171e;
+  --gold: #a8874b;
+  --gold-soft: #c7ad79;
+  --ink: #28221d;
+  --ink-soft: #5d534a;
+  --line: rgba(117,31,41,.22);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; padding: 26px; background: #e9dcc4; color: var(--ink); font-family: 'Cormorant Garamond', serif; }
+.letter { width: min(94vw, 920px); min-height: 1180px; margin: 0 auto; padding: 56px 66px 50px; background: var(--paper); border: 1px solid var(--gold-soft); box-shadow: 0 20px 55px rgba(50,32,23,.18), inset 0 0 0 7px #fffaf0, inset 0 0 0 8px rgba(117,31,41,.22); }
+.letter-head { display: grid; grid-template-columns: 1fr 230px; gap: 25px; align-items: center; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+.brand h1 { margin: 0; color: var(--wine-deep); font-family: 'Cinzel', serif; font-size: 23px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
+.brand p { margin: 5px 0 0; color: var(--ink-soft); font-style: italic; }
+.logo { width: 220px; justify-self: end; }
+.meta { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 30px; margin: 24px 0; padding: 17px 20px; background: rgba(199,173,121,.08); border: 1px solid rgba(168,135,75,.32); }
+.meta div { font-size: 14px; color: var(--ink-soft); }
+.meta strong { color: var(--wine-deep); font-weight: 600; }
+.subject { margin: 31px 0 20px; color: var(--wine-deep); font-family: 'Cinzel', serif; font-size: 18px; font-weight: 500; letter-spacing: .04em; }
+.letter p { margin: 0 0 15px; font-size: 17px; line-height: 1.55; color: var(--ink-soft); }
+.letter p strong { color: var(--ink); }
+.section-title { margin: 25px 0 10px; color: var(--wine); font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+ul { margin: 8px 0 20px; padding-left: 22px; columns: 2; column-gap: 40px; }
+li { margin: 0 0 7px; break-inside: avoid; color: var(--ink-soft); font-size: 15px; line-height: 1.35; }
+.tech { display: flex; flex-wrap: wrap; gap: 7px; margin: 7px 0 20px; }
+.pill { padding: 4px 8px; border: 1px solid rgba(168,135,75,.4); border-radius: 999px; color: var(--wine-deep); font-family: 'Cinzel', serif; font-size: 9px; }
+.closing-note { margin-top: 23px !important; padding: 14px 17px; border-left: 3px solid var(--gold); background: rgba(168,135,75,.07); font-size: 14px !important; }
+.signing { display: grid; grid-template-columns: 1fr 130px; gap: 30px; align-items: end; margin-top: 36px; }
+.signature { width: 300px; text-align: center; }
+.signature-script { margin: 0 !important; color: var(--wine-deep) !important; font-family: 'Great Vibes', cursive; font-size: 38px !important; line-height: 1 !important; }
+.sig-line { height: 1px; margin: 7px 10px 7px; background: var(--gold); }
+.sig-role { font-size: 13px !important; line-height: 1.35 !important; }
+.seal { width: 125px; opacity: .92; transform: rotate(-5deg); }
+.verify { margin-top: 28px; padding-top: 13px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 12px; line-height: 1.5; }
+.error-message { color: var(--wine); text-align: center; font-family: 'Cinzel', serif; }
+@media (max-width: 720px) { body { padding: 0; } .letter { width: 100%; min-height: 0; padding: 38px 24px; } .letter-head { grid-template-columns: 1fr; text-align: center; } .logo { justify-self: center; } .meta { grid-template-columns: 1fr; } ul { columns: 1; } .signing { grid-template-columns: 1fr; justify-items: center; } .signature { width: 100%; } }
+@media print { @page { size: A4 portrait; margin: 10mm; } body { padding: 0; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; } .letter { width: 100%; min-height: 0; padding: 34px 42px; box-shadow: none; } .letter p { font-size: 14px; line-height: 1.4; margin-bottom: 10px; } .meta { margin: 16px 0; padding: 12px 15px; } .subject { margin: 20px 0 14px; } .section-title { margin-top: 16px; } ul { margin-bottom: 12px; } li { font-size: 12px; margin-bottom: 4px; } .signing { margin-top: 20px; } .seal { width: 100px; } }
