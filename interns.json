@@ -94,3 +94,93 @@
   {
     "id": "fatemehsakhaei",
     "certificateId": "MTRK-INT-2026-FS-005",
+    "name": "Fatemeh Sakhaei",
+    "dateOfBirth": "26 August 1998",
+    "university": "Aix Marseille University",
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=fatemehsakhaei",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ]
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "shahryartofighian",
+    "certificateId": "MTRK-INT-2026-ST-006",
+    "name": "Shahryar Tofighian",
+    "dateOfBirth": "16 January 2000",
+    "university": "Università degli Studi dell'Insubria",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=shahryartofighian"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "majidyaghoubi",
+    "certificateId": "MTRK-INT-2026-MY-007",
+    "name": "Majid Yaghoubi",
+    "dateOfBirth": "1 July 1988",
+    "university": "University of Mazandaran",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=majidyaghoubi"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "baharekiani",
+    "certificateId": "MTRK-INT-2026-BK-008",
+    "name": "Bahare Kiani",
+    "dateOfBirth": "13 March 2000",
+    "university": "Islamic Azad University, Science and Research Branch",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=baharekiani"
+  }
+]
