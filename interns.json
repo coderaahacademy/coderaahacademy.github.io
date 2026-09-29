@@ -21,5 +21,97 @@
       "Validation, centralized exception handling and automated testing",
       "Git and GitHub collaborative development workflow"
     ]
+  },
+  {
+    "id": "rominaraeisiestabragh",
+    "certificateId": "MTRK-INT-2026-RRE-002",
+    "name": "Romina Raeisi Estabragh",
+    "dateOfBirth": "16 July 2003",
+    "university": "Bergische University Wuppertal",
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=rominaraeisiestabragh",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ]
+  },
+  {
+    "id": "mehrnasebrahimi",
+    "certificateId": "MTRK-INT-2026-ME-003",
+    "name": "Mehrnaz Ebrahimi",
+    "dateOfBirth": "19 September 1983",
+    "university": "Payam Noor University",
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=mehrnasebrahimi",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ]
+  },
+  {
+    "id": "shayestehsadatmosavi",
+    "certificateId": "MTRK-INT-2026-SSM-004",
+    "name": "Shayesteh Sadat Mosavi",
+    "dateOfBirth": "13 January 2001",
+    "university": "Hamburg University of Applied Sciences (HAW Hamburg)",
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=shayestehsadatmosavi",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ]
+  },
+  {
+    "id": "fatemehsakhaei",
+    "certificateId": "MTRK-INT-2026-FS-005",
+    "name": "Fatemeh Sakhaei",
+    "dateOfBirth": "26 August 1998",
+    "university": "Aix Marseille University",
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=fatemehsakhaei",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ]
   }
 ]
