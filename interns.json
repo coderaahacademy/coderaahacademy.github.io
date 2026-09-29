@@ -182,5 +182,74 @@
     "dateOfBirth": "13 March 2000",
     "university": "Islamic Azad University, Science and Research Branch",
     "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=baharekiani"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "mazdakfarmani",
+    "certificateId": "MTRK-INT-2026-MF-009",
+    "name": "Mazdak Farmani",
+    "dateOfBirth": "29 August 1981",
+    "university": "",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=mazdakfarmani"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "maryamtajdani",
+    "certificateId": "MTRK-INT-2026-MT-010",
+    "name": "Maryam Tajdani",
+    "dateOfBirth": "21 September 1988",
+    "university": "University of Ottawa",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=maryamtajdani"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "noushinasghari",
+    "certificateId": "MTRK-INT-2026-NA-011",
+    "name": "Noushin Asghari",
+    "dateOfBirth": "20 June 1984",
+    "university": "",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=noushinasghari"
   }
 ]
