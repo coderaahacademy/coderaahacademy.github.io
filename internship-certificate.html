@@ -371,10 +371,16 @@
         intern.dateOfBirth;
 
 
-      byId(
-        "university"
-      ).textContent =
-        intern.university;
+      const universityElement =
+        byId(
+          "university"
+        );
+
+      universityElement.textContent =
+        intern.university || "";
+
+      universityElement.hidden =
+        !intern.university;
 
 
       byId(
