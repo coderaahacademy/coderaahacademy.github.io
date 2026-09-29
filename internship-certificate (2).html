@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Online verification for CodeRaah Academy MedTrack Internship Completion Certificates."
+  >
+
+  <title>MedTrack Internship Completion Certificate</title>
+
+  <link
+    rel="stylesheet"
+    href="internship-certificate.css"
+  >
+</head>
+
+<body>
+
+  <main
+    class="certificate"
+    id="certificate"
+    hidden
+  >
+
+    <!--
+      This image contains NO TEXT.
+      It contains ONLY:
+      parchment, ornate border, flowers, and architectural drawings.
+    -->
+    <img
+      src="certificate-background.png"
+      class="certificate-background"
+      alt=""
+      aria-hidden="true"
+    >
+
+    <div class="certificate-content">
+
+      <!-- BRAND HEADER -->
+      <header class="brand-header">
+
+        <div class="coderaah-brand">
+
+          <img
+            src="coderaah-logo.png"
+            class="coderaah-logo"
+            alt="CodeRaah Academy"
+          >
+
+          <div class="coderaah-wording">
+
+            <div class="academy-name">
+              CodeRaah Academy
+            </div>
+
+            <div class="academy-tagline">
+              We teach them to build, so they can rebuild the world
+            </div>
+
+          </div>
+        </div>
+
+        <div
+          class="brand-divider"
+          aria-hidden="true"
+        >
+          <span>◆</span>
+        </div>
+
+        <img
+          src="medtrack-logo.svg"
+          class="medtrack-logo"
+          alt="MedTrack Healthcare Engineering"
+        >
+
+      </header>
+
+
+      <!-- MAIN CERTIFICATE TEXT -->
+      <section class="main-copy">
+
+        <h1>
+          Internship Completion Certificate
+        </h1>
+
+        <div
+          class="ornament ornament-title"
+          aria-hidden="true"
+        >
+          <span></span>
+          <b>❦</b>
+          <span></span>
+        </div>
+
+        <p class="certify">
+          This is to certify that
+        </p>
+
+
+        <!-- STUDENT NAME -->
+        <div class="name-row">
+
+          <span class="short-line"></span>
+          <span class="flourish">❧</span>
+
+          <h2 id="student-name"></h2>
+
+          <span class="flourish mirrored">❧</span>
+          <span class="short-line reversed"></span>
+
+        </div>
+
+
+        <!-- DOB + UNIVERSITY -->
+        <div class="student-meta">
+
+          <div>
+            Date of Birth:
+            <span id="date-of-birth"></span>
+          </div>
+
+          <div id="university"></div>
+
+        </div>
+
+
+        <!-- COMPLETION SENTENCE -->
+        <p class="completion-sentence">
+          has successfully completed the
+          <strong id="program"></strong>
+          and contributed to the development of
+        </p>
+
+
+        <!-- PROJECT -->
+        <div class="project-row">
+
+          <span class="short-line"></span>
+          <span class="flourish">❧</span>
+
+          <div
+            class="project-name"
+            id="project"
+          ></div>
+
+          <span class="flourish mirrored">❧</span>
+          <span class="short-line reversed"></span>
+
+        </div>
+
+        <div
+          class="project-subtitle"
+          id="project-subtitle"
+        ></div>
+
+        <div
+          class="completion-date"
+          id="completion-date"
+        ></div>
+
+      </section>
+
+
+      <!-- ENGINEERING EXPERIENCE -->
+      <section class="experience-section">
+
+        <div class="experience-heading">
+
+          <span class="heading-line"></span>
+          <span class="heading-flourish">❧</span>
+
+          <h3>
+            Engineering Experience
+          </h3>
+
+          <span class="heading-flourish mirrored">❧</span>
+          <span class="heading-line reversed"></span>
+
+        </div>
+
+        <div
+          class="experience-grid"
+          id="competencies"
+        ></div>
+
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="certificate-footer">
+
+        <div class="recognition-block">
+
+          <p class="recognition-text">
+            This certificate formally recognizes the participant's successful
+            completion of the MedTrack internship program and their practical
+            software engineering work under the academic guidance and authority
+            of CodeRaah Academy.
+          </p>
+
+          <p class="certificate-id">
+            Certificate ID:
+            <strong id="certificate-id"></strong>
+          </p>
+
+          <p class="verification">
+            Verification:
+            <span id="verification-url"></span>
+          </p>
+
+        </div>
+
+
+        <div class="authority-block">
+
+          <img
+            src="medtrack-wax-seal.png"
+            class="wax-seal"
+            alt="MedTrack Internship Seal"
+          >
+
+          <div
+            class="signature"
+            id="supervisor"
+          ></div>
+
+          <div class="signature-rule">
+            <span>✦</span>
+          </div>
+
+          <div
+            class="signature-role"
+            id="supervisor-title"
+          ></div>
+
+        </div>
+
+      </footer>
+
+    </div>
+
+  </main>
+
+
+  <div
+    class="error-message"
+    id="error"
+    hidden
+  ></div>
+
+
+  <script>
+
+    const byId =
+      id => document.getElementById(id);
+
+
+    function showError(message) {
+
+      const error =
+        byId("error");
+
+      error.textContent =
+        message;
+
+      error.hidden =
+        false;
+    }
+
+
+    async function loadCertificate() {
+
+      const internId =
+        new URLSearchParams(
+          window.location.search
+        ).get("id");
+
+
+      if (!internId) {
+
+        showError(
+          "Certificate ID is missing."
+        );
+
+        return;
+      }
+
+
+      try {
+
+        const response =
+          await fetch(
+            "interns.json",
+            {
+              cache: "no-store"
+            }
+          );
+
+
+        if (!response.ok) {
+
+          throw new Error(
+            "Could not load interns.json"
+          );
+        }
+
+
+        const interns =
+          await response.json();
+
+
+        const intern =
+          interns.find(
+            item => item.id === internId
+          );
+
+
+        if (!intern) {
+
+          showError(
+            "Internship certificate not found."
+          );
+
+          return;
+        }
+
+
+        if (
+          intern.status !== "completed"
+        ) {
+
+          showError(
+            "This internship completion certificate has not been issued."
+          );
+
+          return;
+        }
+
+
+        renderCertificate(
+          intern
+        );
+
+      } catch (error) {
+
+        console.error(error);
+
+        showError(
+          "The certificate could not be loaded."
+        );
+      }
+    }
+
+
+    function renderCertificate(
+      intern
+    ) {
+
+      byId(
+        "student-name"
+      ).textContent =
+        intern.name;
+
+
+      byId(
+        "date-of-birth"
+      ).textContent =
+        intern.dateOfBirth;
+
+
+      const universityElement =
+        byId(
+          "university"
+        );
+
+      universityElement.textContent =
+        intern.university || "";
+
+      universityElement.hidden =
+        !intern.university;
+
+
+      byId(
+        "program"
+      ).textContent =
+        intern.program;
+
+
+      byId(
+        "project"
+      ).textContent =
+        intern.project;
+
+
+      byId(
+        "project-subtitle"
+      ).textContent =
+        intern.projectSubtitle;
+
+
+      byId(
+        "completion-date"
+      ).textContent =
+        intern.completionDate;
+
+
+      byId(
+        "certificate-id"
+      ).textContent =
+        intern.certificateId;
+
+
+      byId(
+        "verification-url"
+      ).textContent =
+        intern.verificationUrl;
+
+
+      byId(
+        "supervisor"
+      ).textContent =
+        intern.supervisor;
+
+
+      byId(
+        "supervisor-title"
+      ).textContent =
+        intern.supervisorTitle;
+
+
+      renderCompetencies(
+        intern.competencies
+      );
+
+
+      document.title =
+        `${intern.name} — MedTrack Internship Completion Certificate`;
+
+
+      byId(
+        "certificate"
+      ).hidden =
+        false;
+    }
+
+
+    function renderCompetencies(
+      competencies
+    ) {
+
+      const container =
+        byId(
+          "competencies"
+        );
+
+
+      container.innerHTML =
+        "";
+
+
+      competencies.forEach(
+        competency => {
+
+          const item =
+            document.createElement(
+              "div"
+            );
+
+
+          item.className =
+            "competency";
+
+
+          const bullet =
+            document.createElement(
+              "span"
+            );
+
+
+          bullet.className =
+            "competency-bullet";
+
+
+          bullet.textContent =
+            "◆";
+
+
+          const text =
+            document.createElement(
+              "span"
+            );
+
+
+          text.textContent =
+            competency;
+
+
+          item.append(
+            bullet,
+            text
+          );
+
+
+          container.appendChild(
+            item
+          );
+        }
+      );
+    }
+
+
+    window.addEventListener(
+      "DOMContentLoaded",
+      loadCertificate
+    );
+
+  </script>
+
+</body>
+</html>
