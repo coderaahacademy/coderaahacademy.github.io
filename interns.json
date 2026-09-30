@@ -251,5 +251,51 @@
     "dateOfBirth": "20 June 1984",
     "university": "",
     "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=noushinasghari"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "maryamshojaei",
+    "certificateId": "MTRK-INT-2026-MS-012",
+    "name": "Maryam Shojaei",
+    "dateOfBirth": "16 September 1982",
+    "university": "Bielefeld University",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=maryamshojaei"
+  },
+  {
+    "program": "Backend Software Engineering Internship",
+    "project": "MedTrack",
+    "projectSubtitle": "Healthcare & Clinical Practice Management Backend",
+    "completionDate": "September 2026",
+    "status": "completed",
+    "supervisor": "Fatemeh Jafari",
+    "supervisorTitle": "Program Lead & Founder",
+    "competencies": [
+      "Layered backend architecture using Controller, Service, Repository and DTO patterns",
+      "REST API design and implementation",
+      "Healthcare domain modelling and business-rule implementation",
+      "Persistence with JPA / Hibernate and PostgreSQL",
+      "Validation, centralized exception handling and automated testing",
+      "Git and GitHub collaborative development workflow"
+    ],
+    "id": "amenehkianinezhad",
+    "certificateId": "MTRK-INT-2026-AK-013",
+    "name": "Ameneh Kianinezhad",
+    "dateOfBirth": "11 May 1990",
+    "university": "",
+    "verificationUrl": "https://coderaahacademy.org/internship-certificate.html?id=amenehkianinezhad"
   }
 ]
